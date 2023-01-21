@@ -18,8 +18,9 @@
 	gcloud compute tpus tpu-vm create TPUNAME \  
 	--zone=europe-west4-a \ 
 	--accelerator-type=v3-32 \ 
-	--version=tpu-vm-tf-2.11.0 \   v2-alpha
+	--version=tpu-vm-tf-2.11.0 \   #v2-alpha
 	--preemptible 
+	--tf-version=2.11.0 \   #not-sure
 	--data-disk source=projects/[MYPROJECT]/zones/europe-west4-a/disks/DISKNAME 
 ---
 ###### Connecting to TPU 
@@ -55,5 +56,7 @@
 	`UUID=52af08e4-f249-4efa-9aa3-7c7a9fd560b0 /mnt/disks/flaxdisk ext4 discard,defaults,nofail 0 2`
 
 ---
-
-
+######  *Checking TPU-VMs status*
+	gcloud compute tpus tpu-vm list --zone=europe-west4-a
+	
+---
