@@ -18,18 +18,16 @@
 	gcloud compute tpus tpu-vm create TPUNAME \  
 	--zone=europe-west4-a \ 
 	--accelerator-type=v3-32 \ 
-	--version=tpu-vm-tf-2.11.0 \   #v2-alpha
-	--preemptible 
-	--tf-version=2.11.0 \   #not-sure
-	--data-disk source=projects/[MYPROJECT]/zones/europe-west4-a/disks/DISKNAME 
+	--version=v2-alpha \  
+	--preemptible  
 ---
 ###### Connecting to TPU 
 
 	gcloud alpha compute tpus tpu-vm ssh TPUNAME --zone europe-west4-a
 ---
-###### *Attach Disk To TPU*
+###### *Attach/Detach Disk To TPU*
 
-	gcloud compute tpus tpu-vm attach-disk TPUNAME \
+	gcloud alpha compute tpus tpu-vm [at/de]tach-disk TPUNAME \
 	--disk=example-disk \ 
 	--zone=europe-west4-a
 
@@ -58,5 +56,4 @@
 ---
 ######  *Checking TPU-VMs status*
 	gcloud compute tpus tpu-vm list --zone=europe-west4-a
-	
 ---
