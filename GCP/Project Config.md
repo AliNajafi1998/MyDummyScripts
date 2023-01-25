@@ -1,4 +1,4 @@
-###### *Creating Virtual Environment*
+##### *Creating Virtual Environment*
 	sudo apt-get update
 	python3 -m pip install --user --upgrade pip
 	python3 -m pip install --user virtualenv
@@ -6,7 +6,7 @@
 	python3 -m venv flax
 	source flax/bin/activate
 ---
-###### *Installing Jax*
+##### *Installing Jax*
 	pip install --upgrade clu
 	
 	pip install "jax[tpu]>=0.2.26" \
@@ -15,7 +15,7 @@
 	export USE_TORCH=False
 
 ---
-###### *Set up Transformers*
+##### *Set up Transformers*
 	pip install tensorflow-cpu
 	git clone https://github.com/huggingface/transformers
 	cd transformers
