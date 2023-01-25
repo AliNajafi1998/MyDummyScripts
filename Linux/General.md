@@ -1,8 +1,7 @@
 Linux Commands 
 
-###### *Running Scripts in Parallel*
+##### *Running Scripts in Parallel*
 	cat turkish_tweets_all_fnames.txt | parallel python script.py {} --max-procs N 
 
 ##### *Change Owner of file*
 	sudo chown $(whoami) ~/TurkishTwitterRobertaLarge/.git/config
-    
