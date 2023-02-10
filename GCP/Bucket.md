@@ -2,6 +2,6 @@
 	gsutil -m cp -R gs://project-bucket-name path/to/local
 ---
 ##### *Upload To BucketList*
-	gsutil cp path/to/local gs://project-bucket-name
+	gsutil cp -R path/to/local gs://project-bucket-name
 
 

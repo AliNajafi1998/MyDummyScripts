@@ -21,7 +21,7 @@
 	--version=v2-alpha \  
 	--preemptible  
 ---
-##### Connecting to TPU 
+##### *Connecting to TPU*
 
 	gcloud alpha compute tpus tpu-vm ssh TPUNAME --zone europe-west4-a
 ---
