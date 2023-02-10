@@ -13,7 +13,7 @@
 	 --version v2-alpha \
 	 --data-disk source=projects/[MYPROJECT]/zones/europe-west4-a/disks/DISKNAME 
 ---
-##### *Creating Preemptible TPU [You may not want to attach the disk here]
+##### *Creating Preemptible TPU [You may not want to attach the disk here]*
 
 	gcloud compute tpus tpu-vm create TPUNAME \  
 	--zone=europe-west4-a \ 
